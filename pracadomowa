@@ -1,0 +1,44 @@
+
+print("Twoja ulubiona gra?")
+print("A - CS_GO      B - Warzone       C - Forza_horizn 5")
+
+odp = input("Opd =")
+sum = 0
+
+if odp == "A":
+  sum = sum + 1
+if odp == "B":
+  sum = sum + 2
+if odp == "C":
+  sum = sum + 3
+
+print("Jaką karte graficzna chcesz mieć?")
+print("A - rtx_4070     B - gtx_1050        C - rtx_2080")
+
+odp = input("Opd =")
+
+if odp == "A":
+  sum = sum + 1
+if odp == "B":
+  sum = sum + 2
+if odp == "C":
+  sum = sum + 3
+ 
+print("Gdzie chciałbyś mieszkać?")
+print("A - New_York    B - Los_Angeles       C - Los Santos")
+
+odp = input("Opd =")
+if odp == "A":
+  sum = sum + 1
+if odp == "B":
+  sum = sum + 2
+if odp == "C":
+
+  sum = sum + 3
+
+if sum <= 3:
+  print("Jesteś Super "," Odp = ", sum)
+elif sum > 3 and sum <= 6:
+  print("Jesteś czarny"," Odp = ", sum)
+else:
+  print("Jesteś "," Odp = ", sum)
