@@ -1,0 +1,75 @@
+Utwórz pustą listę o nazwie "numbers".
+numbers = [1,2,3,4,5,6,7,8,9]
+
+Poproś użytkownika o podanie 5 liczb i dodaj je do listy.
+for i in range(5):
+    number = int(input("Podaj liczbę: "))
+    numbers.append(number)
+
+Oblicz sumę liczb znajdujących się w liście "numbers".
+suma = sum(numbers)
+print("Suma liczb:", suma)
+
+Znajdź największą liczbę w liście "numbers".
+najwieksza = max(numbers)
+print("Największa liczba:", najwieksza)
+
+Znajdź najmniejszą liczbę w liście "numbers".
+najmniejsza = min(numbers)
+print("Najmniejsza liczba:", najmniejsza)
+
+Znajdź średnią arytmetyczną liczb w liście "numbers".
+srednia = sum(numbers) / len(numbers)
+print("Średnia arytmetyczna:", srednia)
+
+Znajdź ilość liczb parzystych w liście "numbers".
+liczby_parzyste = [liczba for liczba in numbers if liczba % 2 == 0]
+ilosc_parzystych = len(liczby_parzyste)
+print("Ilość liczb parzystych:", ilosc_parzystych)
+
+Stwórz nową listę o nazwie "duplicates" zawierającą powtarzające się elementy z listy "numbers".
+duplicates = [liczba for liczba in numbers if numbers.count(liczba) > 1]
+
+Usuń wszystkie powtarzające się elementy z listy "numbers".
+numbers = list(set(numbers))
+
+Stwórz nową listę o nazwie "squares" zawierającą kwadraty liczb z listy "numbers".
+squares = [liczba ** 2 for liczba in numbers]
+
+Wyświetl wszystkie liczby z listy "numbers" w odwrotnej kolejności.
+numbers.reverse()
+print("Liczby w odwrotnej kolejności:", numbers)
+
+Poproś użytkownika o podanie liczby. Sprawdź, czy liczba ta znajduje się w liście "numbers".
+szukana_liczba = int(input("Podaj liczbę do sprawdzenia: "))
+if szukana_liczba in numbers:
+    print("Liczba znajduje się w liście.")
+else:
+    print("Liczba nie znajduje się w liście.")
+
+Wyświetl indeks pierwszego wystąpienia danej liczby w liście "numbers".
+indeks = numbers.index(szukana_liczba)
+print("Indeks pierwszego wystąpienia liczby:", indeks)
+
+Znajdź ilość liczb większych niż 10 w liście "numbers".
+liczby_wieksze_niz_10 = [liczba for liczba in numbers if liczba > 10]
+ilosc_wiekszych_niz_10 = len(liczby_wieksze_niz_10)
+print("Ilość liczb większych niż 10:", ilosc_wiekszych_niz_10)
+Posortuj listę "numbers" w kolejności malejącej.
+numbers.sort(reverse=True)
+
+Znajdź drugą największą liczbę w liście "numbers".
+sorted_numbers = sorted(numbers, reverse=True)
+drugie_najwieksza = sorted_numbers[1]
+print("Druga największa liczba:", drugie_najwieksza)
+Stwórz nową listę o nazwie "doubled_numbers" zawierającą podwojoną wartość każdej liczby z listy "numbers".
+
+doubled_numbers = [liczba * 2 for liczba in numbers]
+
+Zlicz ilość wystąpień danej liczby w liście "numbers".]
+ilosc_wystapien = numbers.count(szukana_liczba)
+print("Ilość wystąpień liczby:", ilosc_wystapien)
+
+Wyświetl wszystkie liczby z listy "numbers" z ich indeksami.
+for indeks, liczba in enumerate(numbers):
+    print(f"Indeks: {indeks}, Licz
