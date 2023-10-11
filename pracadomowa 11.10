@@ -1,0 +1,55 @@
+ count_non_negative_numbers(mojalista):
+    return sum(1 for num in my_list if num >= 0)
+
+
+
+sum_even_numbers(mojalista):
+    return sum(num for num in my_list if num % 2 == 0)
+
+
+sum_odd_numbers(my_list):
+    return sum(num for num in my_list if num % 2 != 0)
+
+
+sum_numbers_divisible_by_5_and_7(my_list):
+    return sum(num for num in my_list if num % 5 == 0 and num % 7 == 0)
+
+
+
+count_occurrences(mojalista):
+    user_input = int(input("Podaj liczbę: "))
+    count = my_list.count(user_input)
+    print(f"Liczba {input(int)} występuje {count} razy na liście.")
+
+
+
+def find_min_max_indexes(mojalista):
+    if not mojalista:
+        return [], []
+
+    min_val = min(my_list)
+    max_val = max(my_list)
+
+    min_indexes = [i for i, val in enumerate(my_list) if val == min_val]
+    max_indexes = [i for i, val in enumerate(my_list) if val == max_val]
+
+
+
+
+generate_list(n, start, end):
+    if start > end:
+        start, end = end, start  # Zamiana, jeśli zakres jest odwrotny
+    mojalista = [i for i in range(start, end + 1)]
+    mojalista = mojaista[:n]  # Jeśli n jest mniejsze niż zakres, przycina listę
+    return mojalista
+
+
+
+
+
+
+
+
+
+
+
