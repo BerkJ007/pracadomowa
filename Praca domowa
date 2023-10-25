@@ -1,0 +1,116 @@
+import math
+ 
+print "######---###KALKULATOR SZKOLNY###--_######"
+ 
+print "by wybrać..."
+ 
+print "-prostokąt (kwadrat), wpisz 1"
+print "-trójkąt, wpisz 2"
+print "-koło, wpisz 3"
+print "-trapez, wpisz 4"
+print "-równoległobok, wpisz 5"
+print "-stożek:"
+print " -pole podstawy, wpisz 6"
+print " -pole pow. bocznej, wpisz 7"
+print " -pole pow. całkowitej, wpisz 8"
+print "- potęga drugiego stopnia, wpisz 9"
+print "- pierwiastek, wpisz 10"
+figura = input("> ")
+ 
+if figura == 1:
+ 
+#------PROSTOKĄT-----#
+print "wpisz długość boku a:"
+bokprostokata_a = input(">> ")
+print "wpisz długość boku b:"
+bokprostokata_b = input(">> ")
+ 
+print "oto twój wynik:"
+print bokprostokata_a*bokprostokata_b
+ 
+#---------TRÓJKĄT-----#
+elif figura == 2:
+print "wpisz długość wysokości:"
+wysokosc_trojkata = input(">> ")
+print "wpisz długość podstawy:"
+podstawa_trojkata = input(">> ")
+ 
+print "oto twój wynik:"
+print wysokosc_trojkata/2*podstawa_trojkata
+elif figura == 3:
+ 
+#------KOŁO----------#
+print "wpisz długość promienia:"
+promien = input(">> ")
+print "twój wynik to:"
+print 3.14*(promien**2)
+elif figura == 4:
+ 
+#-------TRAPEZ-------#
+print "wpisz długość podstawy a:"
+podstawa_trp_a = input(">> ")
+print "wpisz długość podstawy b:"
+podstawa_trp_b = input(">> ")
+print "wpisz długość wysokości:"
+wysokosc_trapezu = input(">> ")
+suma_podstaw = podstawa_trp_a+podstawa_trp_b
+print "twój wynik to:"
+print suma_podstaw/2*wysokosc_trapezu
+ 
+#----RÓWNOLEGŁOBOK---#
+elif figura == 5:
+print "wpiz długość podstawy a"
+podstawa_rown_a = input(">> ")
+print "wpisz długość wysokości"
+wysokosc_rown = input(">> ")
+print "twój wynik to:"
+print podstawa_rown_a*wysokosc_rown
+ 
+#-------STOŻEK-------#
+#POLE PODSTAWY STOŻKA
+ 
+elif figura == 6:
+print "wpisz promień podstawy"
+prn_podst_stoz1 = input(">> ")
+print "twój wynik to:"
+print 3.14*prn_podst_stoz1**2
+ 
+#POLE POW. BOCZNEJ
+elif figura == 7:
+print "wpisz promień stożka:"
+prn_podst_stoz2 = input(">> ")
+print "wpisz długość boku stożka"
+dl_boku_stoz = input(">> ")
+print "twój wynik to:"
+print 3.14*prn_podst_stoz2*dl_boku_stoz
+ 
+#POLE POW CAŁKOWITEJ
+elif figura == 8:
+print "wpisz promień"
+prn_podst_stoz3 = input(">> ")
+print "wpisz długość boku stożka"
+dl_boku_stoz2 = input(">> ")
+pps = 3.14*prn_podst_stoz3
+ppb = 3.14*prn_podst_stoz3*dl_boku_stoz2
+print "twój wynik to:"
+print pps*ppb
+ 
+#potęga 2 stopnia
+elif figura == 9:
+print "wpisz podstawę potęgi"
+potega = input(">> ")
+print "wpisz potęgę:"
+potega_potega = input(">> ")
+potega_wyn = potega ** potega_potega
+print "twój wynik to:"
+print potega_wyn
+ 
+#PIERWIASTEK
+elif figura == 10:
+print "wpisz pierwiastek:"
+pierwiastek = input(">> ")
+pierwiastek_wyn = cmath.sqrt(pierwiastek)
+print pierwiastek_wyn
+ 
+else:
+print "ERROR!!!!!! wpisz liczbę od 1 do 10!"
