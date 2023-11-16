@@ -1,0 +1,31 @@
+def najwieksza_srednia(lista1, lista2, lista3):
+    srednia1 = sum(lista1) / len(lista1)
+    srednia2 = sum(lista2) / len(lista2)
+    srednia3 = sum(lista3) / len(lista3)
+
+    if srednia1 > srednia2 and srednia1 > srednia3:
+        return "Największa średnia znajduje się w liście 1."
+    elif srednia2 > srednia1 and srednia2 > srednia3:
+        return "Największa średnia znajduje się w liście 2."
+    else:
+        return "Największa średnia znajduje się w liście 3."
+
+
+
+def generuj_losowaliste(k, n, m):
+    return [random.randint(n, m) for  in range(k)]
+
+
+
+def podnies_do_pierwiastka(lista):
+    return [math.sqrt(x) for x in lista]
+
+
+losowa_lista = generuj_losowa_liste(rozmiar, zakres_n, zakres_m)
+print(losowa_lista)
+def podnies_do_kwadratu(lista):
+    return [x**2 for x in lista]
+import math
+
+def podnies_do_pierwiastka(lista):
+    return [math.sqrt(x) for x in lista]
